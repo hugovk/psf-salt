@@ -5,6 +5,11 @@ include:
 git:
   pkg.installed
 
+{% if grains["oscodename"] == "jammy" %}
+python2.7-dev:
+  pkg.installed
+{% endif %}
+
 planet-user:
   user.present:
     - name: planet

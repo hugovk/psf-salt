@@ -14,7 +14,7 @@ SERVERS = [
   {:name => "loadbalancer", :ports => [20000, 20001, 20002, 20003, 20004, 20005, 20010]},
   "mail",
   "moin",
-  "planet",
+  {:name => "planet", :codename => "jammy"},
   "pypy-web",
   "pythontest",
   "web-pypa",
